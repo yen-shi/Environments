@@ -1,0 +1,2 @@
+1. Bios-MBR-Grub
+https://ifconfiger.com/articles/understanding-on-BIOS-MBR-GRUB
