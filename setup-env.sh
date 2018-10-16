@@ -14,7 +14,10 @@ cp ./configs/.gitconfig ${HOME}
 
 # ssl key gen
 # manually copy from original computer
-echo "Don't forget to copy ssh config (or keys) from original computer."
+echo "=========================================================================================="
+echo " Don't forget to copy ssh config (or keys) from original computer.                        "
+echo " You should set ssh key file with correct permission, and use \`ssh-add\` to add the key. "
+echo "=========================================================================================="
 
 # change shell to zsh
 apt install -y zsh
