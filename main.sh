@@ -7,4 +7,3 @@ bash ./setup-env.sh
 # bashh ./install-conda.sh
 
 # bash ./install-latex.sh
-
