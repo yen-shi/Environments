@@ -9,6 +9,10 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 # install all packages listed in vimrc
 vim +PluginInstall +qall
 
+# install CtrlP for Vim
+cd ~/.vim
+git clone https://github.com/kien/ctrlp.vim.git bundle/ctrlp.vim
+
 # get git configuration
 cp ./configs/.gitconfig ${HOME}
 

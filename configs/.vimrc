@@ -17,6 +17,9 @@ Plugin 'vim-syntastic/syntastic'
 call vundle#end()
 filetype plugin indent on
 
+"CtrlP
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+
 "Original vim configuration
 syntax on               " highlight syntax with colors
 set ai                  " auto indent
