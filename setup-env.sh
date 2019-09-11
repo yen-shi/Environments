@@ -1,7 +1,8 @@
 #!/bin/bash
 
+CURPATH=${PWD}
 # get vim configuration
-cp ./configs/.vimrc ${HOME}
+cp ${CURPATH}/configs/.vimrc ${HOME}
 
 # clone Vundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
@@ -14,7 +15,7 @@ cd ~/.vim
 git clone https://github.com/kien/ctrlp.vim.git bundle/ctrlp.vim
 
 # get git configuration
-cp ./configs/.gitconfig ${HOME}
+cp ${CURPATH}/configs/.gitconfig ${HOME}
 
 # ssl key gen
 # manually copy from original computer
@@ -24,10 +25,5 @@ echo " You should set ssh key file with correct permission, and use \`ssh-add\` 
 echo "=========================================================================================="
 
 # change shell to zsh
-apt install -y zsh
-sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
-chsh -s /bin/zsh
-echo "You need to re-login to change the default shell."
-
-cp ./configs/.custom-shrc ${HOME}
-echo "source \${HOME}/.custom-shrc" >> ${HOME}/.zshrc
+cp ${CURPATH}/configs/.custom-shrc ${HOME}
+echo "source \${HOME}/.custom-shrc" >> ${HOME}/.bashrc
